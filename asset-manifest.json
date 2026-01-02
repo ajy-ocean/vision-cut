@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ajy-ocean/vision-cut/static/css/main.42de4556.css",
+    "main.js": "/ajy-ocean/vision-cut/static/js/main.70c032e3.js",
+    "static/js/626.e9a4dbea.chunk.js": "/ajy-ocean/vision-cut/static/js/626.e9a4dbea.chunk.js",
+    "static/js/284.db6c0458.chunk.js": "/ajy-ocean/vision-cut/static/js/284.db6c0458.chunk.js",
+    "static/js/453.0715cede.chunk.js": "/ajy-ocean/vision-cut/static/js/453.0715cede.chunk.js",
+    "static/media/ort-wasm-simd-threaded.jsep.wasm": "/ajy-ocean/vision-cut/static/media/ort-wasm-simd-threaded.jsep.ce14fe5a0a12cc7d4389.wasm",
+    "static/media/ort.webgpu.bundle.min.mjs": "/ajy-ocean/vision-cut/static/media/ort.webgpu.bundle.min.caf2c10cba83e025e2cc.mjs",
+    "static/media/ort.bundle.min.mjs": "/ajy-ocean/vision-cut/static/media/ort.bundle.min.bc9851d8ac84a0218387.mjs",
+    "index.html": "/ajy-ocean/vision-cut/index.html",
+    "main.42de4556.css.map": "/ajy-ocean/vision-cut/static/css/main.42de4556.css.map",
+    "main.70c032e3.js.map": "/ajy-ocean/vision-cut/static/js/main.70c032e3.js.map",
+    "626.e9a4dbea.chunk.js.map": "/ajy-ocean/vision-cut/static/js/626.e9a4dbea.chunk.js.map",
+    "284.db6c0458.chunk.js.map": "/ajy-ocean/vision-cut/static/js/284.db6c0458.chunk.js.map",
+    "453.0715cede.chunk.js.map": "/ajy-ocean/vision-cut/static/js/453.0715cede.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42de4556.css",
+    "static/js/main.70c032e3.js"
+  ]
+}
