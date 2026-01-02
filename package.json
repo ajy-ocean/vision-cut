@@ -1,6 +1,9 @@
 {
   "name": "vision-cut",
   "version": "0.1.0",
+  "description": "AI-powered background removal and precision image editing in the browser.",
+  "author": "rawatji",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@imgly/background-removal": "^1.7.0",
