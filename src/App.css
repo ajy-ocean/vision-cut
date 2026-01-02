@@ -1,0 +1,276 @@
+:root {
+  --bg: #0c0c0b;
+  --bg-pane: #1a1a19;
+  --accent: #eb5e28;
+  --text: #fffcf2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  overflow: hidden;
+  height: 100dvh;
+}
+
+.vision-app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
+  border-bottom: 1px solid var(--bg-pane);
+  flex-shrink: 0;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.upload-label,
+.dl-btn {
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.upload-label {
+  background: var(--bg-pane);
+  color: var(--text);
+}
+
+.dl-btn {
+  background: var(--accent);
+  color: white;
+}
+
+/* Layout */
+.studio-container {
+  display: flex;
+  flex: 1;
+  height: calc(100% - 70px);
+  overflow: hidden;
+}
+
+.toolbar {
+  width: 320px;
+  min-width: 320px;
+  background: var(--bg);
+  border-right: 1px solid var(--bg-pane);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.magic-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 40px;
+  font-weight: 800;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.adj-section {
+  overflow-y: auto;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-header label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.reset-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.65rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.control-item {
+  margin-bottom: 15px;
+}
+
+.val-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+  height: 4px;
+}
+
+.ratio-section {
+  border-top: 1px solid var(--bg-pane);
+  padding-top: 15px;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ratio-group {
+  display: flex;
+  gap: 8px;
+}
+
+.ratio-group button {
+  flex: 1;
+  background: var(--bg-pane);
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Workspace */
+.workspace {
+  flex: 1;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.canvas-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.vignette-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ReactCrop img {
+  max-width: 100%;
+  max-height: 70vh;
+  display: block;
+}
+
+/* Hero */
+.hero-centered {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-main {
+  font-size: 3.5rem;
+  letter-spacing: 12px;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.logo-main span {
+  color: var(--accent);
+}
+
+.btn-hero-upload {
+  background: var(--accent);
+  color: white;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .studio-container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .workspace {
+    height: 50vh;
+    min-height: 350px;
+    padding: 20px;
+    flex: none;
+  }
+
+  .toolbar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-top: 1px solid var(--bg-pane);
+  }
+
+  .adj-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .section-header,
+  .magic-btn {
+    grid-column: span 2;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
