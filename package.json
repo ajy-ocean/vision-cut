@@ -1,6 +1,7 @@
 {
   "name": "vision-cut",
   "version": "0.1.0",
+  "homepage": "https://github.com/ajy-ocean/vision-cut",
   "description": "AI-powered background removal and precision image editing in the browser.",
   "author": "rawatji",
   "license": "MIT",
@@ -22,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
